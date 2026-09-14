@@ -1,30 +1,19 @@
-# Velvet Hold'em
+# Glimmer Pop
 
-Six-max no-limit Texas Hold'em at a private felt table. Five CGI regulars are already online. You take the empty chair.
+Arcade bubble shooter. Aim the glass orbs, match three, clear the cabinet.
 
-**GitHub:** [github.com/Futuret3chdev/velvet-holdem](https://github.com/Futuret3chdev/velvet-holdem)
+**GitHub:** [github.com/Futuret3chdev/glimmer-pop](https://github.com/Futuret3chdev/glimmer-pop)
 
-**Vercel:** Import the repo at [vercel.com/new](https://vercel.com/new/import?s=https://github.com/Futuret3chdev/velvet-holdem).
-
-## The room
-
-| Seat | Style |
-| --- | --- |
-| Nico Vale | Sharp |
-| Ruby Chen | Pressure |
-| Cal Harrow | Caller |
-| Mira Sol | Rock |
-| Jax Rook | Heat |
-
-Blinds 25 / 50. Deep stacks.
+**Vercel:** Import this repo at [vercel.com/new](https://vercel.com/new/import?s=https://github.com/Futuret3chdev/glimmer-pop).
 
 ## Play
 
-- Sit down with a name
-- Hole cards on the rail, board above the pot
-- Fold / Check / Call / Raise, plus Min · Pot · All in
-- Keys: `F` fold, `C` check or call, `R` raise, `A` all in, `N` next hand
+- Drag to aim, tap to fire
+- Walls bounce
+- Match three of a kind — hanging clusters fall
+- Ceiling drops if you stall
+- Best score stays on the device
 
 ## Stack
 
-React 19, TanStack Start, Three.js, React Three Fiber, Tailwind v4.
+React 19, TanStack Start, Canvas 2D, Tailwind v4.
