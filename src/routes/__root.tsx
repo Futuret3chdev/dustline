@@ -8,7 +8,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Velvet Hold'em";
+const APP_NAME = "Glimmer Pop";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -18,10 +18,9 @@ export const Route = createRootRoute({
       { title: APP_NAME },
       {
         name: "description",
-        content:
-          "Sit the empty chair. Five CGI regulars are already online. No-limit Texas Hold'em at a private felt table.",
+        content: "Aim the glass orbs. Match three. Clear the cabinet. A Puzzle Bobble-style arcade shooter.",
       },
-      { name: "theme-color", content: "#0b0c0b" },
+      { name: "theme-color", content: "#0a1020" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
@@ -33,7 +32,7 @@ export const Route = createRootRoute({
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap",
       },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },

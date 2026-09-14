@@ -1,33 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0b0c0b;
-  --color-surface: #141614;
-  --color-elevated: #1c1f1c;
-  --color-fg: #f1eee6;
-  --color-muted: #9a958a;
-  --color-subtle: #6e6a62;
-  --color-accent: #cfc8ba;
-  --color-accent-fg: #121410;
-  --color-border: rgb(241 238 230 / 0.12);
-  --color-border-strong: rgb(241 238 230 / 0.22);
-  --color-ring: #efe8d8;
-  --color-primary: #efe8d8;
-  --color-primary-foreground: #121410;
-  --color-secondary: #1c1f1c;
-  --color-secondary-foreground: #f1eee6;
-  --color-destructive: #b42318;
-  --color-background: #0b0c0b;
-  --color-foreground: #f1eee6;
-  --color-card: #141614;
-  --color-card-foreground: #f1eee6;
-  --color-muted-foreground: #9a958a;
-  --color-card-face: #f6efe2;
-  --color-suit-red: #9b2c2c;
-  --color-suit-ink: #1a1c22;
+  --color-bg: #0a1020;
+  --color-surface: #141c30;
+  --color-elevated: #1c2740;
+  --color-fg: #f4efe4;
+  --color-muted: #9aa3b8;
+  --color-subtle: #6d7690;
+  --color-accent: #f0c75e;
+  --color-accent-fg: #1a1408;
+  --color-border: rgb(244 239 228 / 0.12);
+  --color-border-strong: rgb(244 239 228 / 0.22);
+  --color-ring: #f0c75e;
+  --color-primary: #f0c75e;
+  --color-primary-foreground: #1a1408;
+  --color-secondary: #1c2740;
+  --color-secondary-foreground: #f4efe4;
+  --color-destructive: #e4455a;
+  --color-background: #0a1020;
+  --color-foreground: #f4efe4;
+  --color-card: #141c30;
+  --color-card-foreground: #f4efe4;
+  --color-muted-foreground: #9aa3b8;
 
-  --font-sans: "Outfit", "Segoe UI", system-ui, sans-serif;
-  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Fredoka", "Nunito", system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   --radius-xs: 0.25rem;
@@ -37,8 +34,8 @@
   --radius-xl: 1.5rem;
   --radius: 0.75rem;
 
-  --shadow-border: 0 0 0 1px rgb(241 238 230 / 0.1);
-  --shadow-border-hover: 0 0 0 1px rgb(241 238 230 / 0.16);
+  --shadow-border: 0 0 0 1px rgb(244 239 228 / 0.1);
+  --shadow-border-hover: 0 0 0 1px rgb(244 239 228 / 0.16);
 }
 
 @layer base {
@@ -75,109 +72,8 @@
   }
 }
 
-.lobby-wash {
-  background: linear-gradient(
-    to top,
-    var(--color-bg) 0%,
-    color-mix(in oklab, var(--color-bg) 55%, transparent) 42%,
-    transparent 72%
-  );
-}
-
-.online-dot {
-  display: inline-block;
-  width: 0.4rem;
-  height: 0.4rem;
-  margin-right: 0.35rem;
-  border-radius: 999px;
-  background: color-mix(in oklab, var(--color-fg) 70%, #3f6b52);
-  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-fg) 8%, transparent);
-  vertical-align: middle;
-}
-
-.cast-thumb {
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 999px;
-  object-fit: cover;
-  object-position: center;
-  background: var(--color-elevated);
-  box-shadow: var(--shadow-border);
-}
-
-.seat-acting {
-  box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-fg) 28%, transparent);
-  animation: seat-pulse 1.2s ease-in-out infinite;
-}
-
-.table-tag {
-  min-width: 4.2rem;
-  border-radius: 0.5rem;
-  background: color-mix(in oklab, var(--color-surface) 88%, transparent);
-  padding: 0.2rem 0.45rem;
-  text-align: center;
-  box-shadow: var(--shadow-border);
-}
-
-.table-tag-name {
-  font-size: 0.7rem;
-  font-weight: 600;
-  line-height: 1.1;
-  color: var(--color-fg);
-}
-
-.table-tag-stack {
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  tabular-nums: true;
-  color: var(--color-muted);
-}
-
-.actor-card {
-  display: flex;
-  max-width: 17rem;
-  align-items: flex-end;
-  gap: 0.7rem;
-}
-
-.actor-face {
-  width: 7.5rem;
-  height: 7.5rem;
-  flex-shrink: 0;
-  border-radius: 999px;
-  object-fit: cover;
-  object-position: center top;
-  background: var(--color-elevated);
-  box-shadow: var(--shadow-border);
-}
-
-.actor-line {
-  margin: 0;
-  max-width: 11rem;
-  border-radius: 0.75rem;
-  background: var(--color-surface);
-  padding: 0.4rem 0.7rem;
+.font-display {
   font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-style: italic;
-  line-height: 1.25;
-  color: var(--color-fg);
-  box-shadow: var(--shadow-border);
-}
-
-.actor-name {
-  margin: 0 0 0.3rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-}
-
-@keyframes seat-pulse {
-  50% {
-    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-fg) 32%, transparent);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
