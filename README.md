@@ -1,19 +1,18 @@
-# Glimmer Pop
+# Dustline
 
-Arcade bubble shooter. Aim the glass orbs, match three, clear the cabinet.
+First-person dusty arena. MT World operators in tactical kits. Hold the sites.
 
-**GitHub:** [github.com/Futuret3chdev/glimmer-pop](https://github.com/Futuret3chdev/glimmer-pop)
+**GitHub:** [github.com/Futuret3chdev/dustline](https://github.com/Futuret3chdev/dustline)
 
-**Vercel:** Import this repo at [vercel.com/new](https://vercel.com/new/import?s=https://github.com/Futuret3chdev/glimmer-pop).
+**Vercel:** Import at [vercel.com/new](https://vercel.com/new/import?s=https://github.com/Futuret3chdev/dustline).
 
 ## Play
 
-- Drag to aim, tap to fire
-- Walls bounce
-- Match three of a kind — hanging clusters fall
-- Ceiling drops if you stall
-- Best score stays on the device
+- Move: left stick / WASD
+- Look: right drag / mouse
+- Fire, reload
+- Five MT World operators on the other side of the dust
 
 ## Stack
 
-React 19, TanStack Start, Canvas 2D, Tailwind v4.
+React 19, TanStack Start, Three.js, React Three Fiber, Tailwind v4.

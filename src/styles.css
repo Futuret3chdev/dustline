@@ -1,30 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0a1020;
-  --color-surface: #141c30;
-  --color-elevated: #1c2740;
-  --color-fg: #f4efe4;
-  --color-muted: #9aa3b8;
-  --color-subtle: #6d7690;
-  --color-accent: #f0c75e;
-  --color-accent-fg: #1a1408;
-  --color-border: rgb(244 239 228 / 0.12);
-  --color-border-strong: rgb(244 239 228 / 0.22);
-  --color-ring: #f0c75e;
-  --color-primary: #f0c75e;
-  --color-primary-foreground: #1a1408;
-  --color-secondary: #1c2740;
-  --color-secondary-foreground: #f4efe4;
-  --color-destructive: #e4455a;
-  --color-background: #0a1020;
-  --color-foreground: #f4efe4;
-  --color-card: #141c30;
-  --color-card-foreground: #f4efe4;
-  --color-muted-foreground: #9aa3b8;
+  --color-bg: #1a1612;
+  --color-surface: #241e18;
+  --color-elevated: #2e261e;
+  --color-fg: #efe6d6;
+  --color-muted: #a89880;
+  --color-subtle: #7a6c58;
+  --color-accent: #c9a227;
+  --color-hud: #8cff7a;
+  --color-ct: #5b8cbf;
+  --color-border: rgb(239 230 214 / 0.12);
+  --color-border-strong: rgb(239 230 214 / 0.22);
+  --color-ring: #c9a227;
+  --color-primary: #c9a227;
+  --color-primary-foreground: #1a1612;
+  --color-secondary: #2e261e;
+  --color-secondary-foreground: #efe6d6;
+  --color-destructive: #b42318;
+  --color-background: #1a1612;
+  --color-foreground: #efe6d6;
+  --color-card: #241e18;
+  --color-card-foreground: #efe6d6;
+  --color-muted-foreground: #a89880;
 
-  --font-sans: "Nunito", "Segoe UI", system-ui, sans-serif;
-  --font-display: "Fredoka", "Nunito", system-ui, sans-serif;
+  --font-sans: "Rajdhani", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Rajdhani", system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   --radius-xs: 0.25rem;
@@ -34,8 +35,8 @@
   --radius-xl: 1.5rem;
   --radius: 0.75rem;
 
-  --shadow-border: 0 0 0 1px rgb(244 239 228 / 0.1);
-  --shadow-border-hover: 0 0 0 1px rgb(244 239 228 / 0.16);
+  --shadow-border: 0 0 0 1px rgb(239 230 214 / 0.1);
+  --shadow-border-hover: 0 0 0 1px rgb(239 230 214 / 0.16);
 }
 
 @layer base {
@@ -60,20 +61,11 @@
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-
-  h1,
-  h2,
-  h3 {
-    text-wrap: balance;
-  }
-
-  p {
-    text-wrap: pretty;
-  }
 }
 
 .font-display {
   font-family: var(--font-display);
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: reduce) {
